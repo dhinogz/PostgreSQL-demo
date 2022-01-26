@@ -8,3 +8,8 @@ services:
       - .:/projects
     ports:
       - 8000:8000
+
+    db:
+      image: postgress:14
+      environment:
+        - "POSTGRES_HOST_AUTH_METHOD=trust"
