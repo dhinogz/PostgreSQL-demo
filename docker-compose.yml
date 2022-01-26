@@ -12,6 +12,6 @@ services:
       - db
 
   db:
-    image: postgress:14
+    image: postgres:14
     environment:
       - "POSTGRES_HOST_AUTH_METHOD=trust"
